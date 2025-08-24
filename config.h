@@ -97,8 +97,6 @@ static const Key keys[] = {
 	{ MODKEY,			XK_x,      spawn,          {.v = (const char*[]){ "sysact", NULL } } },
 	{ MODKEY,			XK_Insert, spawn,          {.v = (const char*[]){ "bookmarks", NULL } } },
 	{ MODKEY|ShiftMask,		XK_m, 	   spawn,          {.v = (const char*[]){ "usb", NULL } } },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screenshot crop") },
-	{ 0,				XK_Print,  spawn,          SHCMD("screenshot full") },
 
 	{ 0, XF86XK_AudioMute,                     spawn,          SHCMD("volume mute") },
 	{ 0, XF86XK_AudioLowerVolume,              spawn,          SHCMD("volume down") },
