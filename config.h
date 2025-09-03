@@ -17,7 +17,7 @@ static const char col_mauve[]       = "#cba6f7"; /* top bar second color (blue) 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_mauve,  col_mauve  },
+	[SchemeSel]  = { col_gray4, col_mauve, col_mauve  },
 };
 
 /* tagging */
@@ -28,9 +28,9 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class      	instance    title       tags mask     isfloating   monitor */
+	{ "Firefox",  	NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "KeePassXC",  NULL,       NULL,       1 << 7,       0,           -1 },
 };
 
 /* layout(s) */
